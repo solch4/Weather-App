@@ -1,0 +1,56 @@
+.container {
+  width: 90%;
+  max-width: 975px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  background-color: pink;
+  padding-bottom: 1.5rem;
+  margin-bottom: 25px;
+}
+
+.title {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 800;
+  font-size: x-large;
+  color: lightcoral;
+  margin-top: 1.5rem;
+}
+
+.aboutme {
+  margin: 3px;
+}
+
+.searchbar {
+  margin: 2px;
+}
+
+@media (min-width: 480px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 1rem;
+  }
+  .navbar {
+    padding-bottom: 1rem;
+  }
+  .aboutme {
+    order: 3;
+    margin: 0;
+  }
+  .title {
+    font-size: larger;
+    margin: 0;
+    order: 1;
+  }
+  .searchbar {
+    margin: 0;
+    order: 2;
+  }
+}

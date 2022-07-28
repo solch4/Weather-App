@@ -1,0 +1,72 @@
+.card-title {
+  color: lightcoral;
+  font-size: larger;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.temp,
+.feels_like,
+.weatherMain {
+  color: lightcoral;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 90%;
+  max-width: 350px;
+  border: 2px solid lightcoral;
+  border-radius: 15px;
+  background-color: mistyrose;
+}
+
+.cardContainer:hover {
+  transition: 0.2s;
+  box-shadow: 0 4px 26px -6px pink;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-temp {
+  margin-top: -8px;
+}
+
+.weatherMain {
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
+
+.icon{
+  filter: drop-shadow(0px 0px 15px lightcoral);
+}
+
+.closeBtn {
+  align-self: flex-end;
+  height: 25px;
+  width: 25px;
+  margin: 10px 10px 0px 0px;
+  border-style: none;
+  border-radius: 5px;
+  color: mistyrose;
+  background-color: lightcoral;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.closeBtn:hover {
+  color: rgb(243, 181, 172);
+  background-color: rgb(209, 109, 109);
+}
+
+@media (min-width: 700px) {
+  .cardContainer {
+    /* flex-wrap: wrap; */
+    margin: 0px 5px 20px 5px;
+    max-width: 290px;
+  }
+}
