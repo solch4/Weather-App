@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/Card.css";
 
 export default function Card({
@@ -15,7 +16,11 @@ export default function Card({
       <button className="closeBtn" onClick={onClose}>
         X
       </button>
-      <h5 className="card-title">{name}</h5>
+
+      <Link className="card-title" to={`/city/${id}`}>
+        <h5 className="card-title">{name}</h5>
+      </Link>
+
       <div className="card-body">
         <div className="card-temp">
           <p className="temp">Temp {temp}°</p>

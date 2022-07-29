@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
-// import { Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Nav from './components/Nav.js';
-import Card from './components/Card.js';
 import Cards from './components/Cards.js'
 import About from './components/About.js'
 import City from './components/City.js'
@@ -24,20 +23,20 @@ function App() {
             weatherMain: resource.weather[0].main,
             img: resource.weather[0].icon,
 
-            lat: resource.coord.lat,
-            lon: resource.coord.lon,
+            /* lat: resource.coord.lat,
+            lon: resource.coord.lon, */
             weatherDescription: resource.weather[0].description,
             min: Math.round(resource.main.temp_min),
             max: Math.round(resource.main.temp_max),
+            pressure: resource.main.pressure,
             humidity: resource.main.humidity,
+            visibility: (resource.visibility)/1000,
             wind: resource.wind.speed,
             clouds: resource.clouds.all,
-            timezone: resource.timezone
+            /* timezone: resource.timezone */
           };
           setCities([...cities, ciudad]);
-        } else {
-          alert("Ciudad no encontrada");
-        }
+        } else alert("City not found.")
       });
     }
   
@@ -45,14 +44,18 @@ function App() {
     setCities(oldCities => oldCities.filter(c => c.id !== id));
   }
 
+  function onFilter(ciudadId) {
+    let ciudad = cities.filter(c => c.id === parseInt(ciudadId));
+    if(ciudad.length > 0) return ciudad[0]
+    else return null
+  }
+
   return (
     <div className="App">
-      <div>
-        <Nav onSearch={onSearch} />
-      </div>
-      <div>
-        <Cards cities={cities} onClose={onClose}/>
-      </div>
+      <Route path="/" render={() => <Nav onSearch={onSearch} />} />
+      <Route exact path="/" render={() => <Cards cities={cities} onClose={onClose} />} />
+      <Route exact path="/about" render={()=><About/>}/>
+      <Route path={"/city/:cityId"} render={({match})=><City city={onFilter(match.params.cityId)}/>}/>
     </div>
   );
 }

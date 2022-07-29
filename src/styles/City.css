@@ -1,0 +1,33 @@
+.city {
+  color: lightcoral;
+  width: 90%;
+  max-width: 975px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+  background-color: mistyrose;
+  border-radius: 15px;
+}
+
+.city h2 {
+  margin: 0 auto;
+}
+
+.city-container .icon {
+  width: 100px;
+  height: 100px;
+}
+
+.city-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.city-column1,
+.city-column2 {
+  width: 50%;
+}
+
+p {
+  margin: 0 auto;
+}

@@ -10,7 +10,11 @@
 .navbar {
   background-color: pink;
   padding-bottom: 1.5rem;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+}
+
+.container a {
+  text-decoration: none;
 }
 
 .title {
@@ -21,12 +25,15 @@
   margin-top: 1.5rem;
 }
 
-.aboutme {
-  margin: 3px;
+.about {
+  font-size: large;
+  font-weight: 700;
+  color: lightcoral;
+  margin: 1rem;
 }
 
 .searchbar {
-  margin: 2px;
+  margin: 5px 0;
 }
 
 @media (min-width: 480px) {
@@ -34,21 +41,20 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
     padding: 1rem;
   }
   .navbar {
-    padding-bottom: 1rem;
-  }
-  .aboutme {
-    order: 3;
-    margin: 0;
+    padding: 1rem 0;
   }
   .title {
-    font-size: larger;
+    font-size: x-larger;
     margin: 0;
     order: 1;
   }
+  .about {
+    order: 3;
+    margin: 0;
+  } 
   .searchbar {
     margin: 0;
     order: 2;

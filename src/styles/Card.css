@@ -1,4 +1,5 @@
 .card-title {
+  text-decoration: none;
   color: lightcoral;
   font-size: larger;
   margin: 0;
