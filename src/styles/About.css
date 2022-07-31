@@ -1,8 +1,31 @@
 .about-body {
   color: lightcoral;
-  width: 90%;
+  width: 85%;
   max-width: 975px;
   margin: 0 auto;
-  padding: 0.5rem 1rem;
+  padding: 1.5rem 1rem;
   background-color: mistyrose;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px mistyrose;
+}
+
+.about-body h3 {
+  margin: 0 auto;
+}
+
+.about-body .php {
+  width: 45%;
+  max-width: 240px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.about-body p {
+  margin: 5px auto;
+}
+
+.about-body a {
+  font-weight: bold;
+  color: lightcoral;
+  text-decoration: none;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import php from "../assets/php.jpg";
 import "../styles/About.css";
 
 export default function About() {
@@ -6,8 +7,20 @@ export default function About() {
     <div className="about-body">
       <h3>Sol Maldonado</h3>
       <h4>Front-End Web Developer</h4>
-      <img alt='fotitooo' />
-      <p>Hi! My name is Sol and I'm from Tucumán, Argentina. I'm 18 Years old and this year I started a bootcamp in SoyHenry Fullstack Web Developer etc dsp la pienso me gustaría trabajar blabla y dejo los links denme plata</p>
+      <img className="php" alt="pic" src={php} />
+      <p>
+        Hi! My name is Sol and I'm from Tucumán, Argentina. I'm 18 Years old and
+        this year I started to learn about Full Stack Web Development in the
+        bootcamp SoyHenry. I've built this weather app as a practice with ReactJS
+        and CSS.
+      </p>
+      <p>
+        Here is my&nbsp;
+        <a href="https://linktr.ee/solch4" target="_blank" rel="noreferrer">
+          Linktree
+        </a>
+        &nbsp;with my LinkedIn, GitHub and email!
+      </p>
     </div>
   );
 }

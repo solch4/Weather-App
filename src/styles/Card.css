@@ -44,7 +44,8 @@
 }
 
 .icon{
-  filter: drop-shadow(0px 0px 15px lightcoral);
+  filter: drop-shadow(0px 0px 5px lightcoral);
+  user-select: none;
 }
 
 .closeBtn {
@@ -66,7 +67,6 @@
 
 @media (min-width: 700px) {
   .cardContainer {
-    /* flex-wrap: wrap; */
     margin: 0px 5px 20px 5px;
     max-width: 290px;
   }

@@ -1,25 +1,30 @@
-.searchInput{
-    border: 1.5px solid lightcoral;
-    border-radius: 5px;
-    color: lightcoral;
-    background-color: mistyrose;
-    padding: 4px 8px;
-    outline: none;
+.searchInput {
+  border: 1.5px solid lightcoral;
+  border-radius: 5px;
+  color: lightcoral;
+  background-color: mistyrose;
+  padding: 4px 8px;
+  outline: none;
 }
 
-.searchBtn{
-    margin-left: 2px;
-    color: lightcoral;
-    background-color: mistyrose;
-    border: 1.5px solid lightcoral;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 4px 6px;
-    transition-duration: 0.4s;
+.searchBtn {
+  margin-left: 2px;
+  color: lightcoral;
+  background-color: mistyrose;
+  border: 1.5px solid lightcoral;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 4px 6px;
+  transition-duration: 0.4s;
 }
 
-.searchBtn:hover{
-    border-color: mistyrose;
-    color: mistyrose;
-    background-color: lightcoral;
+.searchBtn:hover {
+  color: mistyrose;
+  background-color: lightcoral;
+}
+
+@media (min-width: 700px) {
+  .searchInput {
+    width: 220px;
+  }
 }
