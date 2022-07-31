@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/City.css";
 
 export default function City({ city }) {
@@ -8,8 +9,11 @@ export default function City({ city }) {
   }
 
   return (
-    <div className="city">
-      <div className="city-container">
+    <div className="city-container">
+      <Link className="backBtn-container" to="/">
+        <button className="backBtn">↩</button>
+      </Link>
+      <div className="city">
         <h2>{city.name}</h2>
         <img
           className="icon"
@@ -32,9 +36,6 @@ export default function City({ city }) {
             <p>Visibility: {city.visibility} km</p>
             <p>Wind: {city.wind} m/s</p>
             <p>Clouds: {city.clouds}%</p>
-            {/* <p>Timezone: {city.timezone}</p>
-          <p>Latitude: {city.lat}º</p>
-          <p>Longitude: {city.lon}º</p> */}
           </div>
         </div>
       </div>

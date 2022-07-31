@@ -1,19 +1,39 @@
-.city {
+.city-container {
+  display: flex;
+  flex-direction: column;
   color: lightcoral;
   width: 85%;
   max-width: 975px;
   margin: 0 auto;
-  padding: 2.5rem 1rem;
+  padding: 1rem 1rem;
+  padding-bottom: 2rem;
   background-color: mistyrose;
-  box-shadow: 0px 0px 15px mistyrose;
   border-radius: 15px;
+  box-shadow: 0px 0px 15px mistyrose;
+}
+.backBtn-container{
+  align-self: flex-start;
 }
 
-.city h2 {
+.backBtn {
+  border-style: none;
+  border-radius: 7px;
+  color: mistyrose;
+  background-color: lightcoral;
+  padding: 6px 9px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.backBtn:hover {
+  color: rgb(243, 181, 172);
+  background-color: rgb(221, 126, 126);
+}
+
+.city-container h2 {
   margin: 0 auto;
 }
 
-.city .icon {
+.city-container .icon {
   width: 100px;
   height: 100px;
 }
@@ -34,14 +54,18 @@ p {
 }
 
 @media (min-width: 700px) {
-  .city {
+  .city-container {
     max-width: 760px;
-    padding: 3.5rem 1.5rem;
+    padding: 1rem 1.5rem 3.5rem 1.5rem;
   }
-  .city h2 {
+  .backBtn {
+    font-size: large;
+    padding: 6px 11px;
+  }
+  .city-container h2 {
     font-size: xx-large;
   }
-  .city .icon {
+  .city-container .icon {
     width: 120px;
     height: 120px;
     padding: 1rem;
