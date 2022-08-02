@@ -1,9 +1,12 @@
 .searchInput {
+  width: 180px;
   border: 1.5px solid lightcoral;
   border-radius: 5px;
   color: lightcoral;
   background-color: mistyrose;
-  padding: 4px 8px;
+  font-family: Poppins;
+  font-weight: 400;
+  padding: 2px 8px;
   outline: none;
 }
 
@@ -14,13 +17,17 @@
   border: 1.5px solid lightcoral;
   border-radius: 5px;
   cursor: pointer;
-  padding: 4px 6px;
+  font-family: Poppins;
+  font-weight: 400;
+  padding: 2px 6px;
   transition-duration: 0.4s;
 }
 
-.searchBtn:hover {
-  color: mistyrose;
-  background-color: lightcoral;
+@media(hover: hover) and (pointer: fine) {
+  .searchBtn:hover {
+    color: mistyrose;
+    background-color: lightcoral;
+  }
 }
 
 @media (min-width: 700px) {

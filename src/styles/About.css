@@ -5,6 +5,7 @@
   width: 85%;
   max-width: 975px;
   margin: 0 auto;
+  margin-bottom: 18px;
   padding: 1rem 1rem;
   padding-bottom: 2rem;
   background-color: mistyrose;
@@ -25,10 +26,20 @@
 
 .about-body p {
   margin: 5px auto;
+  font-size: 14px;
 }
 
 .about-body a {
   font-weight: bold;
   color: lightcoral;
   text-decoration: none;
+}
+
+@media (min-width: 700px) {
+  .about-body h3 {
+    font-size: 22px;
+  }
+  .about-body p {
+    font-size: 16px;
+  }
 }
