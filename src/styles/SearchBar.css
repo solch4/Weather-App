@@ -9,6 +9,9 @@
   padding: 2px 8px;
   outline: none;
 }
+.searchInput::placeholder {
+  color: rgb(240, 128, 128, 0.6);
+}
 
 .searchBtn {
   margin-left: 2px;
