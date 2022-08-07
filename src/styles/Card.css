@@ -1,5 +1,8 @@
-.card-title {
+a {
   text-decoration: none;
+}
+
+.card-title {
   color: lightcoral;
   font-size: larger;
   margin: 2px 4px;
