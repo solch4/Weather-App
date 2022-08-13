@@ -5,13 +5,26 @@ import Cards from './components/Cards.js'
 import About from './components/About.js'
 import City from './components/City.js'
 import './App.css';
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
+const MySwal = withReactContent(Swal)
 
 function App() {
   const [cities, setCities] = useState([]);
 
   const apiKey = '4ae2636d8dfbdc3044bede63951a019b'
   function onSearch(city) {
-    if (!city) alert('Please, write the name of the city you want to find.')
+    if (!city) {
+      MySwal.fire({
+        icon: "error",
+        title: "Please, write the name of the city you want to find",
+        color: "hsl(0, 6%, 24%)",
+        confirmButtonText: "Ok",
+        confirmButtonColor: "hsl(0, 74%, 74%)",
+        iconColor: 'hsl(0, 74%, 74%)',
+      });  
+    }
     else {
       fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
       .then(r => r.json())
@@ -35,7 +48,17 @@ function App() {
             clouds: resource.clouds.all,
           };
           setCities([...cities, ciudad]);
-        } else alert("City not found.")
+        } else {
+          MySwal.fire({
+            icon: "error",
+            title: "City not found",
+            text: "Please check if it is spelled correctly and try again.",
+            color: "hsl(0, 6%, 24%)",
+            confirmButtonText: "Ok",
+            confirmButtonColor: "hsl(0, 74%, 74%)",
+            iconColor: 'hsl(0, 74%, 74%)',
+          });
+        }
       });
     }
   }

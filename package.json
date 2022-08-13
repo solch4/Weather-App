@@ -1,5 +1,5 @@
 {
-  "homepage":"https://solch4.github.io/Weather-App",
+  "homepage": "https://solch4.github.io/Weather-App",
   "name": "weather-app",
   "version": "0.1.0",
   "private": true,
@@ -11,6 +11,8 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "5.0.1",
+    "sweetalert2": "^11.4.26",
+    "sweetalert2-react-content": "^5.0.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

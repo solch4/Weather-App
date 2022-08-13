@@ -1,10 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/City.css";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
+const MySwal = withReactContent(Swal)
 
 export default function City({ city }) {
   if (!city) {
-    alert("This city is not in the list.");
+    MySwal.fire({
+      icon: "error",
+      title: "This city is not in the list",
+      color: "hsl(0, 6%, 24%)",
+      confirmButtonText: "Ok",
+      confirmButtonColor: "hsl(0, 74%, 74%)",
+      iconColor: 'hsl(0, 74%, 74%)',
+    });
     return <div>This city is not in the list.</div>;
   }
 
