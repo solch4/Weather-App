@@ -12,11 +12,11 @@ export default function Nav({ onSearch }) { //recibe una func onSearch(cityname)
           <span>Weather App</span>
         </div>
       </Link>
-      <Link className="about" to='/about'>
-        <div>
-          <span>About</span>
-        </div>
-      </Link>
+      <span className="about">
+        <Link to='/about'>
+          About
+        </Link>
+      </span>
         <div className="searchbar">
           <SearchBar onSearch={onSearch} />
         </div>

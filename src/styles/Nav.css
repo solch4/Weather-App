@@ -31,6 +31,9 @@
   color: lightcoral;
   margin: 1rem;
 }
+.about a {
+  color: inherit;
+}
 
 .searchbar {
   margin: 5px 0;
@@ -58,5 +61,16 @@
   .searchbar {
     margin: 0;
     order: 2;
+  }
+}
+
+@media (min-width: 900px) {
+  .title {
+    width: 170px;
+    text-align: left;
+  }
+  .about {
+    width: 170px;
+    text-align: right;
   }
 }
