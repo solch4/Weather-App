@@ -6,7 +6,7 @@
   background-color: mistyrose;
   font-family: Poppins;
   font-weight: 400;
-  padding: 2px 8px;
+  padding: .25rem .5rem;
   outline: none;
 }
 .searchInput::placeholder {
@@ -22,8 +22,8 @@
   cursor: pointer;
   font-family: Poppins;
   font-weight: 400;
-  padding: 2px 6px;
-  transition-duration: 0.4s;
+  padding: .25rem .5rem;
+  transition-duration: 0.3s;
 }
 
 @media(hover: hover) and (pointer: fine) {

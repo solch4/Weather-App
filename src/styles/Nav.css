@@ -1,3 +1,9 @@
+.navbar {
+  background-color: pink;
+  padding-bottom: 1.5rem;
+  margin-bottom: 30px;
+}
+
 .container {
   width: 90%;
   max-width: 975px;
@@ -7,22 +13,13 @@
   align-items: center;
 }
 
-.navbar {
-  background-color: pink;
-  padding-bottom: 1.5rem;
-  margin-bottom: 30px;
-}
-
-.container a {
-  text-decoration: none;
-}
-
 .title {
-  font-family: 'Poppins';
   font-weight: 900;
-  font-size: x-large;
   color: lightcoral;
-  margin-top: 1.5rem;
+  margin-block: 1.5rem 0;
+}
+.title:hover {
+  text-decoration: underline;
 }
 
 .about {
@@ -31,8 +28,9 @@
   color: lightcoral;
   margin: 1rem;
 }
-.about a {
-  color: inherit;
+
+.about:hover {
+  text-decoration: underline;
 }
 
 .searchbar {
@@ -46,18 +44,25 @@
     align-items: center;
     padding: 1rem;
   }
+
   .navbar {
     padding: 1rem 0;
   }
+
   .title {
     font-size: x-large;
     margin: 0;
     order: 1;
   }
-  .about {
+
+  .container a:nth-child(2) {
     order: 3;
+  }
+  
+  .about {
     margin: 0;
-  } 
+  }
+
   .searchbar {
     margin: 0;
     order: 2;
@@ -69,6 +74,7 @@
     width: 170px;
     text-align: left;
   }
+
   .about {
     width: 170px;
     text-align: right;

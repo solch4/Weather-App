@@ -24,11 +24,15 @@ a {
   border: 2px solid lightcoral;
   border-radius: 15px;
   background-color: mistyrose;
+  padding: 1rem;
 }
-
 .cardContainer:hover {
   transition: 0.2s;
   box-shadow: 0 4px 26px -6px pink;
+}
+
+.cardContainer p {
+  margin-bottom: 0;
 }
 
 .card-body {
@@ -55,7 +59,7 @@ a {
   align-self: flex-end;
   height: 25px;
   width: 25px;
-  margin: 10px 10px 0px 0px;
+  margin-bottom: .25rem;
   border-style: none;
   border-radius: 5px;
   color: mistyrose;

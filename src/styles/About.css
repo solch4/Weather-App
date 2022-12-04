@@ -35,6 +35,10 @@
   text-decoration: none;
 }
 
+.about-body a:hover {
+  text-decoration: underline;
+}
+
 @media (min-width: 700px) {
   .about-body h3 {
     font-size: 22px;

@@ -23,7 +23,7 @@ export default function City({ city }) {
     <div className="city-container">
       <Link className="backBtn-container" to="/">
         <button className="backBtn">
-          <i class="uil uil-arrow-left"></i>
+          <i className="uil uil-arrow-left"></i>
         </button>
       </Link>
       <div className="city">
