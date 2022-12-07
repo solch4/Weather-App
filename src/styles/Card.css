@@ -1,0 +1,80 @@
+a {
+  text-decoration: none;
+}
+
+.card-title {
+  color: lightcoral;
+  font-size: 1.5rem;
+  margin: 2px 4px;
+  margin-bottom: 8px;
+}
+
+.temp,
+.feels_like,
+.weatherMain {
+  color: lightcoral;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 95%;
+  max-width: 370px;
+  border: 2px solid lightcoral;
+  border-radius: 15px;
+  background-color: mistyrose;
+  padding: 1rem;
+}
+.cardContainer:hover {
+  transition: 0.2s;
+  box-shadow: 0 4px 26px -6px pink;
+}
+
+.cardContainer p {
+  margin-bottom: 0;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-temp {
+  margin-top: -8px;
+}
+
+.weatherMain {
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
+
+.icon{
+  filter: drop-shadow(0px 0px 2px lightcoral);
+  user-select: none;
+}
+
+.closeBtn {
+  align-self: flex-end;
+  height: 25px;
+  width: 25px;
+  margin-bottom: .25rem;
+  border-style: none;
+  border-radius: 5px;
+  color: mistyrose;
+  background-color: lightcoral;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.closeBtn:hover {
+  color: rgb(243, 181, 172);
+  background-color: rgb(209, 109, 109);
+}
+
+@media (min-width: 700px) {
+  .cardContainer {
+    margin: 0px 5px 20px 5px;
+    max-width: 310px;
+  }
+}
